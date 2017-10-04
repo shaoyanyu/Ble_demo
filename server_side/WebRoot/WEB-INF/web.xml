@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>mypack.test</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>test0</servlet-name>
+    <servlet-class>mypack.test0</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>test1</servlet-name>
+    <servlet-class>mypack.test1</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/servlet/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test0</servlet-name>
+    <url-pattern>/servlet/test0</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test1</servlet-name>
+    <url-pattern>/servlet/test1</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>bookstore.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
